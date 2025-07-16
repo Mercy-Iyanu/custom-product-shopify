@@ -4,11 +4,11 @@ import { shopifyFetch } from "@/lib/shopify";
 import { GET_PRODUCT } from "@/lib/queries";
 import { ShopifyProduct } from "./types";
 import BuyNowButton from "@/components/BuyNowButton";
+import "./styles/ProductPage.css";
 
 export default async function ProductPage() {
-  // Server-side fetch at build or request time
   const data = await shopifyFetch(GET_PRODUCT, {
-    handle: "protein-powder", // 👈 update with actual handle
+    handle: "protein-powder",
   });
 
   const product: ShopifyProduct = data.productByHandle;

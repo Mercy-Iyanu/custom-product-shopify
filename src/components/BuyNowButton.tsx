@@ -16,7 +16,7 @@ export default function BuyNowButton({ variantId }: BuyNowButtonProps) {
   };
 
   return (
-    <button type="button" onClick={handleBuyNow}>
+    <button type="button" className="buy-now-button" onClick={handleBuyNow}>
       Buy Now
     </button>
   );
