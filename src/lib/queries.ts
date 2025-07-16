@@ -4,7 +4,7 @@ export const GET_PRODUCT = `
       id
       title
       description
-      images(first: 1) {
+      images(first: 5) {
         edges {
           node {
             originalSrc
